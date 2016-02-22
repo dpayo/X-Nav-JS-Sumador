@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+   <head>
+     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+
+     <title>Sumador aleatorio</title>
+   </head>
+   <body>
+     <script type="text/javascript" charset="utf-8">
+      function add(){
+        var op1= Math.floor(Math.random()*100)
+        var op2=Math.floor(Math.random()*100)
+        var resultado=op1+op2
+        element=document.getElementById('res');
+        element.innerHTML=op1+" + "+op2+" = "+resultado;
+      }
+     </script>
+     <h1>Sumador</h1>
+      <p>Adder...<span id='op'></span>
+       <span id="res"></span> <a href="javascript:add()">Add!</a></p>
+   </body>
+</html>
